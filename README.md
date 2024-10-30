@@ -17,6 +17,11 @@ The multi-agent network is designed to efficiently analyze and respond to custom
 
 This network is built on Crew AI’s multi-agent framework. Each agent within a crew operates autonomously but is designed to collaborate seamlessly with other agents to streamline the review response workflow.
 
+<div style="text-align: center;">
+    <img src="figure/response_generation_agent.png" alt="Hybrid RAG Diagram" width="800"/>
+</div>
+
+
 ### Workflow
 
 1. **Input**: A new customer review is submitted to the network.
@@ -25,9 +30,6 @@ This network is built on Crew AI’s multi-agent framework. Each agent within a 
 4. **Response Creation**: The Responder compiles a response, integrating insights from both the Categorizer and Researcher to ensure accuracy and completeness.
 5. **Output**: The final, curated response is outputted, ready to be shared with the customer.
 
-<div style="text-align: center;">
-    <img src="figure/response_generation_agent.png" alt="Hybrid RAG Diagram" width="800"/>
-</div>
 
 
 <div style="text-align: center;">
@@ -53,6 +55,10 @@ The Data Analyst Agent network is designed to facilitate a seamless flow of info
 
 This network is built on the LangGraph framework. Each agent operates independently but communicates efficiently to ensure user questions are addressed promptly and accurately.
 
+<div style="text-align: center;">
+    <img src="figure/data_analyst_agent.png" alt="Hybrid RAG Diagram" width="800"/>
+</div>
+
 ### Workflow
 
 1. **Input**: A user submits a question or request for analysis to the Supervisor.
@@ -62,9 +68,7 @@ This network is built on the LangGraph framework. Each agent operates independen
 5. **Output Preparation**: Once the Supervisor is satisfied with the information, it sends the data to the Coder.
 6. **Data Visualization**: The Coder uses the Python REPL tool to execute code and generate plots or other visualizations based on the research findings.
 
-<div style="text-align: center;">
-    <img src="figure/data_analyst_agent.png" alt="Hybrid RAG Diagram" width="800"/>
-</div>
+
 <div style="text-align: center;">
     <img src="figure/data_analyst_agent.gif" alt="Hybrid RAG Diagram" width="800"/>
 </div>
